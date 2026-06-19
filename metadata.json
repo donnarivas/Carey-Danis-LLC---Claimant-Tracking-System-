@@ -1,0 +1,6 @@
+{
+  "name": "CRM Spreadsheet",
+  "description": "Interactive CRM spreadsheet pre-loaded with 100 contacts across schools, therapists, parent associations, churches, youth nonprofits, and community centers. Features status tracking, dynamic filtering, sorting, custom contact editing, and CSV import/export capabilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

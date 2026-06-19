@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-editorial-egg: #F9F7F2;
+  --color-editorial-ink: #1A1A1A;
+  --color-editorial-mud: #8C8984;
+  --color-editorial-linen: #D1CEC7;
+  --color-editorial-sand: #EDEAE4;
+  --color-editorial-board: #F2EFE8;
+}
+
+body {
+  background-color: var(--color-editorial-egg);
+  color: var(--color-editorial-ink);
+  font-family: var(--font-sans);
+}
+
+/* Custom editorial aesthetics */
+.editorial-badge {
+  @apply border border-editorial-ink/30 px-2 py-0.5 text-[10px] uppercase tracking-wider font-semibold;
+}
+
