@@ -57,9 +57,9 @@ export default function App() {
           }
         });
 
-        // Ensure that contacts with 'gt-', 'har-', 'lmu-' or 'cpp-' in their id are at the very beginning
-        const priority = merged.filter((c) => c.id.startsWith("gt-") || c.id.startsWith("har-") || c.id.startsWith("lmu-") || c.id.startsWith("cpp-"));
-        const others = merged.filter((c) => !c.id.startsWith("gt-") && !c.id.startsWith("har-") && !c.id.startsWith("lmu-") && !c.id.startsWith("cpp-"));
+        // Ensure that contacts with 'gt-', 'har-', 'lmu-', 'cpp-' or 'sfsu-' in their id are at the very beginning
+        const priority = merged.filter((c) => c.id.startsWith("gt-") || c.id.startsWith("har-") || c.id.startsWith("lmu-") || c.id.startsWith("cpp-") || c.id.startsWith("sfsu-"));
+        const others = merged.filter((c) => !c.id.startsWith("gt-") && !c.id.startsWith("har-") && !c.id.startsWith("lmu-") && !c.id.startsWith("cpp-") && !c.id.startsWith("sfsu-"));
         const reordered = [...priority, ...others];
 
         setContacts(reordered);

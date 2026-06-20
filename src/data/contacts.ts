@@ -1403,12 +1403,39 @@ const RAW_CONTACTS: Contact[] = [
     status: "New",
     lastContactDate: "",
     followUp: "Assigned Template: Template A (Clinical/Department Lead)"
+  },
+  // ==========================================
+  // --- SAN FRANCISCO STATE UNIVERSITY (2) ---
+  // ==========================================
+  {
+    id: "sfsu-1",
+    organization: "San Francisco State University (CAPS)",
+    contactName: "Dr. Stephen Chen",
+    title: "Director (Attn: Dr. Stephen Chen)",
+    email: "caps@sfsu.edu",
+    phoneNumber: "(415) 338-2208",
+    category: "Therapist",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Assigned Template A. Subject Line: Attn: Dr. Stephen Chen – Informational Resource Proposal for Student Distribution"
+  },
+  {
+    id: "sfsu-2",
+    organization: "San Francisco State University (CAPS)",
+    contactName: "Susan Chen, LMFT",
+    title: "Clinical Counselor (Attn: Susan Chen)",
+    email: "caps@sfsu.edu",
+    phoneNumber: "(415) 338-2208",
+    category: "Therapist",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Assigned Template B. Subject Line: Attn: Susan Chen, LMFT – Academic & Consumer Rights Resource Deployment"
   }
 ];
 
 export const INITIAL_CONTACTS: Contact[] = [
-  ...RAW_CONTACTS.filter(c => c.id.startsWith("gt-") || c.id.startsWith("har-") || c.id.startsWith("lmu-") || c.id.startsWith("cpp-")),
-  ...RAW_CONTACTS.filter(c => !c.id.startsWith("gt-") && !c.id.startsWith("har-") && !c.id.startsWith("lmu-") && !c.id.startsWith("cpp-"))
+  ...RAW_CONTACTS.filter(c => c.id.startsWith("gt-") || c.id.startsWith("har-") || c.id.startsWith("lmu-") || c.id.startsWith("cpp-") || c.id.startsWith("sfsu-")),
+  ...RAW_CONTACTS.filter(c => !c.id.startsWith("gt-") && !c.id.startsWith("har-") && !c.id.startsWith("lmu-") && !c.id.startsWith("cpp-") && !c.id.startsWith("sfsu-"))
 ].map(c => ({
   ...c,
   status: "New" as any,
