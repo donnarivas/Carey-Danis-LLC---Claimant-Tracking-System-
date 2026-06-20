@@ -37,16 +37,36 @@ export default function App() {
     const saved = localStorage.getItem("crm_contacts");
     if (saved) {
       try {
-        const parsed = JSON.parse(saved);
-        const forcedNew = parsed.map((c: any) => ({
+        const parsed = JSON.parse(saved) as Contact[];
+        // Normalized statuses to "New"
+        const normalizedParsed = parsed.map((c: any) => ({
           ...c,
           status: "New" as StatusType,
           lastContactDate: ""
         }));
-        setContacts(forcedNew);
-        localStorage.setItem("crm_contacts", JSON.stringify(forcedNew));
+
+        // Merge with any newly added INITIAL_CONTACTS from contacts.ts that don't exist by id
+        const merged = [...normalizedParsed];
+        INITIAL_CONTACTS.forEach((initC) => {
+          if (!merged.some((m) => m.id === initC.id)) {
+            merged.push({
+              ...initC,
+              status: "New",
+              lastContactDate: ""
+            });
+          }
+        });
+
+        // Ensure that contacts with 'gt-', 'har-', 'lmu-' or 'cpp-' in their id are at the very beginning
+        const priority = merged.filter((c) => c.id.startsWith("gt-") || c.id.startsWith("har-") || c.id.startsWith("lmu-") || c.id.startsWith("cpp-"));
+        const others = merged.filter((c) => !c.id.startsWith("gt-") && !c.id.startsWith("har-") && !c.id.startsWith("lmu-") && !c.id.startsWith("cpp-"));
+        const reordered = [...priority, ...others];
+
+        setContacts(reordered);
+        localStorage.setItem("crm_contacts", JSON.stringify(reordered));
       } catch (e) {
         setContacts(INITIAL_CONTACTS);
+        localStorage.setItem("crm_contacts", JSON.stringify(INITIAL_CONTACTS));
       }
     } else {
       setContacts(INITIAL_CONTACTS);

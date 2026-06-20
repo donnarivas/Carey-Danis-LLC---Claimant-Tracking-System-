@@ -1223,10 +1223,193 @@ const RAW_CONTACTS: Contact[] = [
     status: "Follow-up Needed",
     lastContactDate: "2026-06-02",
     followUp: "Liaise with treating doctors regarding medical diagnosis verification"
+  },
+  // ==========================================
+  // --- LOYOLA MARYMOUNT UNIVERSITY (5) ---
+  // ==========================================
+  {
+    id: "lmu-1",
+    organization: "Loyola Marymount University (Student Psychological Services)",
+    contactName: "Dr. Satinder Gill, Psy.D., ABPP",
+    title: "Director, Student Psychological Services",
+    email: "Satinder.Gill@lmu.edu",
+    phoneNumber: "(310) 338-2868",
+    category: "Therapist",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Establish connection to coordinate legal outreach tools and medical partnerships"
+  },
+  {
+    id: "lmu-2",
+    organization: "Loyola Marymount University (Student Psychological Services)",
+    contactName: "Dr. Zarin Tejani, MD",
+    title: "Medical Director",
+    email: "Zarin.Tejani@lmu.edu",
+    phoneNumber: "(310) 338-2868",
+    category: "Therapist",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Consult regarding diagnostic verification protocols and intake referrals"
+  },
+  {
+    id: "lmu-3",
+    organization: "Loyola Marymount University (Student Psychological Services)",
+    contactName: "Mary Alt, M.A.",
+    title: "Health Education Coordinator",
+    email: "Mary.Alt@lmu.edu",
+    phoneNumber: "(310) 338-2868",
+    category: "School Counselor",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Submit outreach materials for digital litigation health flyers (excellent for outreach materials)"
+  },
+  {
+    id: "lmu-4",
+    organization: "Loyola Marymount University (Student Psychological Services)",
+    contactName: "Angie Blanco-Perez",
+    title: "Senior Administrative Coordinator",
+    email: "Angela.Blanco-Perez@lmu.edu",
+    phoneNumber: "(310) 338-2868",
+    category: "School Counselor",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Coordinate flyer distribution (gatekeeper for waiting room flyers)"
+  },
+  {
+    id: "lmu-5",
+    organization: "Loyola Marymount University (Student Psychological Services)",
+    contactName: "General Department Inbox",
+    title: "SPS Intake Fallback Option",
+    email: "SPS@lmu.edu",
+    phoneNumber: "(310) 338-2868",
+    category: "Community Center",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Fallback routing option for general mental wellbeing coordination"
+  },
+  // ==========================================
+  // --- CAL STAT POLY POMONA (CAPS) (5) ---
+  // ==========================================
+  {
+    id: "cpp-1",
+    organization: "California State Polytechnic University, Pomona (CAPS)",
+    contactName: "Dr. Sean Cheng, Ph.D.",
+    title: "Director, CAPS (Attn: Dr. Sean Cheng)",
+    email: "caps@cpp.edu",
+    phoneNumber: "(909) 869-3220",
+    category: "Therapist",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Mark outgoing draft Attn: Dr. Sean Cheng; discuss clinical program alignments"
+  },
+  {
+    id: "cpp-2",
+    organization: "California State Polytechnic University, Pomona (CAPS)",
+    contactName: "Priscilla E. Velasco",
+    title: "Assistant to the Director",
+    email: "pevelasco@cpp.edu",
+    phoneNumber: "(909) 869-3545",
+    category: "School Counselor",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Primary administrative liaison; route formal outreach documents (best point of contact for formal administrative routing)"
+  },
+  {
+    id: "cpp-3",
+    organization: "California State Polytechnic University, Pomona (CAPS)",
+    contactName: "Raquel Capacete",
+    title: "Case Manager",
+    email: "rccapacete@cpp.edu",
+    phoneNumber: "(909) 869-3220",
+    category: "Therapist",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Directly handles student resource and external referral routing"
+  },
+  {
+    id: "cpp-4",
+    organization: "California State Polytechnic University, Pomona (CAPS)",
+    contactName: "Nestor Gama",
+    title: "Front Desk Coordinator",
+    email: "narellanes@cpp.edu",
+    phoneNumber: "(909) 869-2086",
+    category: "School Counselor",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Request physical reception area placement details for brochures and resources"
+  },
+  {
+    id: "cpp-5",
+    organization: "California State Polytechnic University, Pomona (CAPS)",
+    contactName: "General Department Inbox",
+    title: "CAPS Intake Fallback Option",
+    email: "caps@cpp.edu",
+    phoneNumber: "(909) 869-3220",
+    category: "School Counselor",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Backup administrative transmission queue for general university compliance"
+  },
+  // ==========================================
+  // --- GEORGETOWN UNIVERSITY (2) ---
+  // ==========================================
+  {
+    id: "gt-1",
+    organization: "Georgetown University",
+    contactName: "Dr. Shanice Anderson, Psy.D.",
+    title: "Staff Psychologist & Outreach Coordinator (Hilltop Campus)",
+    email: "sa2058@georgetown.edu",
+    phoneNumber: "(202) 687-6965",
+    category: "Therapist",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Assigned Template: Template B (Outreach & Wellness)"
+  },
+  {
+    id: "gt-2",
+    organization: "Georgetown University",
+    contactName: "Dr. Alyssa Alonso, Ph.D.",
+    title: "Associate Director, CAPS",
+    email: "capsmedcenter@georgetown.edu",
+    phoneNumber: "(202) 687-6965",
+    category: "Therapist",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Subject line requirement: Attn: Dr. Alyssa Alonso (Template A: Clinical/Department Lead)"
+  },
+  // ==========================================
+  // --- HARVARD UNIVERSITY (2) ---
+  // ==========================================
+  {
+    id: "har-1",
+    organization: "Harvard University (Serving Extension School)",
+    contactName: "Dr. Tara Cousineau, Ph.D.",
+    title: "Marketing & Community Engagement Specialist (CAMHS)",
+    email: "tcousineau@huhs.harvard.edu",
+    phoneNumber: "(617) 495-2042",
+    category: "School Counselor",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Assigned Template: Template B (Outreach & Wellness)"
+  },
+  {
+    id: "har-2",
+    organization: "Harvard University (Serving Extension School)",
+    contactName: "Dr. Barbara Lewis, MD",
+    title: "Senior Director of Student Mental Health",
+    email: "barbara_lewis@huhs.harvard.edu",
+    phoneNumber: "(617) 495-2042",
+    category: "Therapist",
+    status: "New",
+    lastContactDate: "",
+    followUp: "Assigned Template: Template A (Clinical/Department Lead)"
   }
 ];
 
-export const INITIAL_CONTACTS: Contact[] = RAW_CONTACTS.map(c => ({
+export const INITIAL_CONTACTS: Contact[] = [
+  ...RAW_CONTACTS.filter(c => c.id.startsWith("gt-") || c.id.startsWith("har-") || c.id.startsWith("lmu-") || c.id.startsWith("cpp-")),
+  ...RAW_CONTACTS.filter(c => !c.id.startsWith("gt-") && !c.id.startsWith("har-") && !c.id.startsWith("lmu-") && !c.id.startsWith("cpp-"))
+].map(c => ({
   ...c,
   status: "New" as any,
   lastContactDate: ""
